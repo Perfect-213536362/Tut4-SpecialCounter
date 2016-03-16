@@ -32,7 +32,7 @@ void SpecialCounter::decrement(int stepSize)
 }
 SpecialCounter operator + (SpecialCounter)
 {
-	int value = Count.getStart();
+	int value = count.getStart();
 	value = +1;
 	count.Start(value);
 	return count;
@@ -45,19 +45,19 @@ SpecialCounter operator - (SpecialCounter)
 	return count;
 
 }
-int getStart()
+int SpecialCounter::getStart()
 {
-
+	return start;
 }
-int getStop()
+int SpecialCounter::getStop()
 {
-
+	return stop;
 }
-void plus1()
+void SpecialCounter::plus1()
 {
-
+	start += incremnt;
 }
-void minus1()
+void SpecialCounter::minus1()
 {
-
+	stop -= decremnt;
 }
