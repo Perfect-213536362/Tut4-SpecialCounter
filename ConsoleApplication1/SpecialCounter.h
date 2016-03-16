@@ -2,11 +2,12 @@
 class SpecialCounter
 {
 private:
-	int Start;
+	int start;
 	int stop;
-	int increment;
-	int decrement;
+	int incremnt;
+	int decremnt;
 public:
+	int stepSize;
 	SpecialCounter();
 	~SpecialCounter();
 	void Starting(int starting);

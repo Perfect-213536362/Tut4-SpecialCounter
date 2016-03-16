@@ -3,34 +3,46 @@
 
 SpecialCounter::SpecialCounter()
 {
-}
+	start = 0;
+	stop = 255;
+	incremnt = 1;
+     decremnt = 1;
 
+}
 
 SpecialCounter::~SpecialCounter()
 {
 }
-void Starting(int starting)
+void SpecialCounter::Starting(int starting)
 {
-
+	start = starting;
 }
-void Stopping(int stopping)
+void SpecialCounter::Stopping(int stopping)
 {
-
+	stop =stopping;
 }
-void Increment(int stepSize)
+void SpecialCounter::increment(int stepSize)
 {
-
+	incremnt = stepSize;
 }
-void decrement(int stepSize)
-{
 
+void SpecialCounter::decrement(int stepSize)
+{
+	decremnt = stepSize;
 }
 SpecialCounter operator + (SpecialCounter)
 {
-
+	int value = Count.getStart();
+	value = +1;
+	count.Start(value);
+	return count;
 }
 SpecialCounter operator - (SpecialCounter)
 {
+	int value = count.getStart();
+	value = -1;
+	count.Start(value);
+	return count;
 
 }
 int getStart()
